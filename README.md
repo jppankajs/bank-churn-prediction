@@ -33,10 +33,30 @@ The project uses a genuine, publicly sourced dataset from Kaggle:
    ```
 
 ## Key Results Summary
+- **Full Report:** [Download/View PDF](report/Customer_Churn_Report.pdf) | [Download DOCX](report/Customer_Churn_Report.docx)
 - **Best Model:** XGBoost out-performed Logistic Regression and Random Forest.
 - **Top Drivers of Churn:** Age (older customers churn more) and Account Balance (higher balance customers churn more).
 - **Geographic Trend:** Customers in Germany showed a significantly higher churn rate compared to France and Spain.
 - **Recommendation:** Proactively target older and high-balance demographics with personalized retention campaigns to preserve revenue.
+
+## Key Visuals
+
+### Churn Class Imbalance
+![Churn Class Imbalance](outputs/figures/eda_1_class_dist.png)
+*Approximately 20% of the customers in the dataset have churned, creating a class imbalance that required careful evaluation metrics (ROC-AUC).*
+
+### ROC Curves
+![ROC Curves](outputs/figures/roc_curves.png)
+*XGBoost achieved the highest ROC-AUC score, indicating it is the most capable model at distinguishing between retained and churned customers.*
+
+### Confusion Matrix (XGBoost)
+![Confusion Matrix](outputs/figures/confusion_matrix.png)
+*The confusion matrix for the best model shows strong performance in identifying true negatives, while maximizing the detection of true positives.*
+
+### Feature Importance
+![Feature Importance](outputs/figures/feature_importance.png)
+*Age is overwhelmingly the most predictive feature for customer churn, followed by account balance and the number of products.*
+
 
 ## Folder Structure
 ```
