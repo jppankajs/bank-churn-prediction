@@ -34,7 +34,7 @@ The project uses a genuine, publicly sourced dataset from Kaggle:
 
 ## Key Results Summary
 - **Full Report:** [Download/View PDF](report/Customer_Churn_Report.pdf) | [Download DOCX](report/Customer_Churn_Report.docx)
-- **Best Model:** XGBoost out-performed Logistic Regression and Random Forest.
+- **Best Model:** Random Forest out-performed Logistic Regression and XGBoost.
 - **Top Drivers of Churn:** Age (older customers churn more) and Account Balance (higher balance customers churn more).
 - **Geographic Trend:** Customers in Germany showed a significantly higher churn rate compared to France and Spain.
 - **Recommendation:** Proactively target older and high-balance demographics with personalized retention campaigns to preserve revenue.
@@ -47,9 +47,9 @@ The project uses a genuine, publicly sourced dataset from Kaggle:
 
 ### ROC Curves
 ![ROC Curves](outputs/figures/roc_curves.png)
-*XGBoost achieved the highest ROC-AUC score, indicating it is the most capable model at distinguishing between retained and churned customers.*
+*Random Forest achieved the highest ROC-AUC score, indicating it is the most capable model at distinguishing between retained and churned customers.*
 
-### Confusion Matrix (XGBoost)
+### Confusion Matrix (Random Forest)
 ![Confusion Matrix](outputs/figures/confusion_matrix.png)
 *The confusion matrix for the best model shows strong performance in identifying true negatives, while maximizing the detection of true positives.*
 

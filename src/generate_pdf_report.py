@@ -135,7 +135,7 @@ def generate_pdf_report():
     pdf.set_font("Arial", size=12)
     findings = [
         "- Age is the most dominant factor in determining customer churn; middle-aged and older customers are at the highest risk.",
-        "- The XGBoost model achieved the best overall performance, particularly in terms of ROC-AUC and balancing Precision with Recall.",
+        "- The Random Forest model achieved the best overall performance, particularly in terms of ROC-AUC and balancing Precision with Recall.",
         "- Customers with high account balances are surprisingly more likely to churn, which may indicate that wealthier clients are being lured away by better offers from competitors.",
         "- The number of products a customer holds is highly predictive; customers with only 1 product or 3+ products show much higher churn rates compared to those with exactly 2 products.",
         "- Geographic location matters: customers in Germany churned at a noticeably higher rate compared to those in France or Spain."
@@ -148,7 +148,7 @@ def generate_pdf_report():
     pdf.set_font("Arial", 'B', 14)
     pdf.cell(200, 10, txt="6. Conclusion & Business Recommendation", ln=True, align='L')
     pdf.set_font("Arial", size=12)
-    text8 = "By utilizing the XGBoost model, the bank can reliably identify a large portion of customers who are about to churn. The business should proactively target high-balance customers and older demographics in Germany with tailored retention campaigns. Specifically, offering premium services or better interest rates to high-balance clients, and encouraging single-product users to adopt a second product, could significantly reduce the overall churn rate and preserve valuable revenue."
+    text8 = "By utilizing the Random Forest model, the bank can reliably identify a large portion of customers who are about to churn. The business should proactively target high-balance customers and older demographics in Germany with tailored retention campaigns. Specifically, offering premium services or better interest rates to high-balance clients, and encouraging single-product users to adopt a second product, could significantly reduce the overall churn rate and preserve valuable revenue."
     pdf.multi_cell(0, 10, txt=text8)
     pdf.ln(10)
     

@@ -141,7 +141,7 @@ def generate_report():
     doc.add_heading('5. Key Findings', level=1)
     findings = [
         "Age is the most dominant factor in determining customer churn; middle-aged and older customers are at the highest risk.",
-        "The XGBoost model achieved the best overall performance, particularly in terms of ROC-AUC and balancing Precision with Recall.",
+        "The Random Forest model achieved the best overall performance, particularly in terms of ROC-AUC and balancing Precision with Recall.",
         "Customers with high account balances are surprisingly more likely to churn, which may indicate that wealthier clients are being lured away by better offers from competitors.",
         "The number of products a customer holds is highly predictive; customers with only 1 product or 3+ products show much higher churn rates compared to those with exactly 2 products.",
         "Geographic location matters: customers in Germany churned at a noticeably higher rate compared to those in France or Spain."
@@ -152,7 +152,7 @@ def generate_report():
     # 7. Conclusion & Business Recommendation
     doc.add_heading('6. Conclusion & Business Recommendation', level=1)
     doc.add_paragraph(
-        "By utilizing the XGBoost model, the bank can reliably identify a large portion of customers who are "
+        "By utilizing the Random Forest model, the bank can reliably identify a large portion of customers who are "
         "about to churn. The business should proactively target high-balance customers and older demographics "
         "in Germany with tailored retention campaigns. Specifically, offering premium services or better "
         "interest rates to high-balance clients, and encouraging single-product users to adopt a second product, "
