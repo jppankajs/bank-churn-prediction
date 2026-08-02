@@ -166,7 +166,7 @@ def generate_pdf_report():
         
     pdf.ln(10)
     pdf.set_font("Arial", 'I', 12)
-    pdf.cell(0, 10, text="Contributor: jp-creater's team", ln=True, align='C')
+    pdf.cell(0, 10, text="Contributor: ps-creater's team", ln=True, align='C')
         
     # Save document
     pdf.output('../report/Customer_Churn_Report.pdf')
