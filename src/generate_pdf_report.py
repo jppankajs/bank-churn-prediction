@@ -14,8 +14,7 @@ def generate_pdf_report():
     pdf.ln(20)
     
     pdf.set_font("Arial", size=12)
-    pdf.cell(200, 10, txt="Author: J P Pankaj", ln=True, align='C')
-    pdf.cell(200, 10, txt=f"Date: {datetime.now().strftime('%B %d, %Y')}", ln=True, align='C')
+    pdf.cell(200, 10, txt="Author: J P Pankaj Singh", ln=True, align='C')
     
     pdf.add_page()
     
@@ -162,7 +161,12 @@ def generate_pdf_report():
         "- There is no information regarding the reason for churn, making it difficult to distinguish between unavoidable churn (e.g., death, relocation) and preventable churn (e.g., competitor offers)."
     ]
     for limit in limitations:
-        pdf.multi_cell(190, 10, txt=limit)
+        pdf.multi_cell(0, 10, txt=limit)
+        pdf.ln(5)
+        
+    pdf.ln(10)
+    pdf.set_font("Arial", 'I', 12)
+    pdf.cell(0, 10, txt="Contributor: jp-creater's team", ln=True, align='C')
         
     # Save document
     pdf.output('../report/Customer_Churn_Report.pdf')
